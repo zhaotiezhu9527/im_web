@@ -57,7 +57,7 @@ var LocaleConfig = {
   man: '男',
   woman: '女',
   unknow: '未知',
-  welcomeText: '欢迎使用云信',
+  welcomeText: '欢迎使用',
   notSupportMessageText: '暂不支持该消息',
   applyTeamText: '申请入群',
   applyTeamSuccessText: '申请入群成功',

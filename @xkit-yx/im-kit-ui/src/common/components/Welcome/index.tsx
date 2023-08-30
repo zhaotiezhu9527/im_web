@@ -12,7 +12,7 @@ export const Welcome: React.FC<WelcomeProps> = ({ prefix = 'common' }) => {
 
   return (
     <div className={`${_prefix}-wrap`}>
-      <img src="https://yx-web-nosdn.netease.im/common/630b48dc545af0633aaaa53bbd65cbb0/欢迎使用云信.png" />
+      <img src="https://yx-web-nosdn.netease.im/common/630b48dc545af0633aaaa53bbd65cbb0/欢迎使用.png" />
       {t('welcomeText')}
     </div>
   )
