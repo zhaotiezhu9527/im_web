@@ -3,7 +3,7 @@
     <div class="login-box" v-if="type === 'login'">
       <!-- <div class="title">验证码登录</div> -->
       <!-- <p class="sub_title">未注册的账号验证通过后将自动注册</p> -->
-      <div class="title">用户登录</div> 
+      <div class="title">用户登录</div>
       <a-form ref="formRef" :rules="rules" layout="vertical" :model="form">
         <a-form-item label="账号：" name="userName">
           <a-input
@@ -172,7 +172,7 @@ export default {
         Cookies.set('imToken', data.imToken);
       });
     },
-    userLogin(){
+    userLogin() {
       this.$refs.formRef.validate().then(() => {
         this.loginFn()
           .then((data) => {
