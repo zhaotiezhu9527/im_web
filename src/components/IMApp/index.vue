@@ -76,8 +76,8 @@ import {
   ContactListContainer, // 通讯录——通讯录导航组件
   ContactInfoContainer, // 通讯录——通讯录详情组件，包含好友列表、群组列表以及黑名单列表
   MyAvatarContainer, // 用户资料组件
-} from '@xkit-yx/im-kit-ui';
-import '@xkit-yx/im-kit-ui/es/style/css';
+} from '../../../@xkit-yx/im-kit-ui';
+import '../../../@xkit-yx/im-kit-ui/es/style/css';
 import './iconfont.css';
 
 export default {

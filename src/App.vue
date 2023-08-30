@@ -6,7 +6,7 @@
 <script>
 import IMApp from './components/IMApp/index.vue';
 import Login from './components/Login.vue';
-import { IMUIKit } from '@xkit-yx/im-kit-ui';
+import { IMUIKit } from '../@xkit-yx/im-kit-ui';
 import { app } from './main';
 import Cookies from 'js-cookie';
 import { useToken } from '@/store';

@@ -1,0 +1,38 @@
+.contact-msg-item {
+  padding: 12px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 4px;
+}
+.contact-msg-item:not(:first-child) {
+  border-top: 1px solid #dbe0e8;
+}
+.contact-msg-item-flex {
+  display: flex;
+  align-items: center;
+}
+.contact-msg-item-state {
+  color: #b3b7bc;
+  display: flex;
+  align-items: center;
+}
+.contact-msg-item-state-icon {
+  font-size: 16px;
+  margin-right: 6px;
+  color: #dbdde4;
+}
+.contact-msg-item-name {
+  margin-left: 12px;
+  font-size: 14px;
+  color: #333333;
+}
+.contact-msg-item-label {
+  margin-left: 12px;
+  font-size: 14px;
+  color: #333333;
+}
+.contact-msg-item-reject-btn {
+  margin-right: 16px;
+}

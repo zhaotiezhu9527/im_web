@@ -1,0 +1,14 @@
+.common-welcome-wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  color: #666666;
+  background-color: #ffffff;
+}
+.common-welcome-wrap img {
+  max-width: 100px;
+  margin-bottom: 6px;
+}

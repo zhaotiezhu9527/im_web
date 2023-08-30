@@ -1,0 +1,24 @@
+.chat-person-setting-wrap {
+  padding: 8px 0;
+}
+.chat-person-setting-wrap .chat-person-setting-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+.chat-person-setting-wrap .chat-person-setting-item-label {
+  padding-left: 12px;
+}
+.chat-person-setting-wrap .chat-person-setting-item:hover {
+  background-color: #f6f8fa;
+}
+.chat-person-setting-wrap .chat-person-setting-add-btn {
+  height: 36px;
+  width: 36px;
+  color: #c1c8d1;
+}
+.chat-person-setting-wrap .chat-person-setting-add-icon {
+  font-size: 14px;
+  color: #c1c8d1;
+}
