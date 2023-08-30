@@ -1,34 +1,89 @@
 <template>
   <div class="login-wrapper">
-    <div class="title">验证码登录</div>
-    <p class="sub_title">未注册的账号验证通过后将自动注册</p>
-    <a-form ref="formRef" :rules="rules" layout="vertical" :model="form">
-      <a-form-item label="账号：" name="userName">
-        <a-input
-          size="large"
-          v-model:value="form.userName"
-          placeholder="请输入账号"
-        />
-      </a-form-item>
-      <a-form-item label="密码：" name="loginPwd">
-        <a-input-password
-          size="large"
-          v-model:value="form.loginPwd"
-          placeholder="请输入密码"
-        />
-      </a-form-item>
-      <a-form-item>
-        <a-button
-          class="button"
-          size="large"
-          block
-          type="primary"
-          @click="submit"
-        >
-          登录
-        </a-button>
-      </a-form-item>
-    </a-form>
+    <div class="login-box" v-if="type === 'login'">
+      <!-- <div class="title">验证码登录</div> -->
+      <!-- <p class="sub_title">未注册的账号验证通过后将自动注册</p> -->
+      <div class="title">用户登录</div> 
+      <a-form ref="formRef" :rules="rules" layout="vertical" :model="form">
+        <a-form-item label="账号：" name="userName">
+          <a-input
+            size="large"
+            v-model:value="form.userName"
+            placeholder="请输入账号"
+          />
+        </a-form-item>
+        <a-form-item label="密码：" name="loginPwd">
+          <a-input-password
+            size="large"
+            v-model:value="form.loginPwd"
+            placeholder="请输入密码"
+          />
+        </a-form-item>
+        <a-form-item>
+          <a-button
+            class="button"
+            size="large"
+            block
+            type="primary"
+            @click="userLogin"
+          >
+            登录
+          </a-button>
+        </a-form-item>
+        <a-form-item>
+          <a-button
+            class="button"
+            size="large"
+            block
+            type="success"
+            @click="type = 'register'"
+          >
+            立即注册
+          </a-button>
+        </a-form-item>
+      </a-form>
+    </div>
+    <div class="register-box" v-if="type === 'register'">
+      <div class="title">注册</div>
+      <a-form ref="formRef" :rules="rules" layout="vertical" :model="form">
+        <a-form-item label="账号：" name="userName">
+          <a-input
+            size="large"
+            v-model:value="form.userName"
+            placeholder="请输入账号"
+          />
+        </a-form-item>
+        <a-form-item label="密码：" name="loginPwd">
+          <a-input-password
+            size="large"
+            v-model:value="form.loginPwd"
+            placeholder="请输入密码"
+          />
+        </a-form-item>
+        <a-form-item>
+          <a-button
+            class="button"
+            size="large"
+            block
+            type="primary"
+            @click="registerFn"
+          >
+            注册
+          </a-button>
+        </a-form-item>
+        <a-form-item>
+          <a-button
+            class="button"
+            size="large"
+            block
+            type="success"
+            @click="type = 'login'"
+          >
+            已有账号，前往登录
+          </a-button>
+        </a-form-item>
+      </a-form>
+    </div>
   </div>
 </template>
 <script>
@@ -64,6 +119,7 @@ export default {
           },
         ],
       },
+      type: 'login', //登录类型
     };
   },
   mounted() {},
@@ -75,7 +131,7 @@ export default {
             if (data.code == -1) {
               // 暂无账号，去注册
               this.registerFn();
-              this.$message.info('账号未注册，验证通过自动注册');
+              this.$message.info('账号未注册!');
             } else {
               // 登录成功
               this.useToken().setToken(data.token);
@@ -114,6 +170,26 @@ export default {
         Cookies.set('token', data.token);
         Cookies.set('accid', data.accid);
         Cookies.set('imToken', data.imToken);
+      });
+    },
+    userLogin(){
+      this.$refs.formRef.validate().then(() => {
+        this.loginFn()
+          .then((data) => {
+            if (data.code == -1) {
+              // 暂无账号，去注册
+              this.$message.info('账号未注册，验证通过自动注册');
+            } else {
+              // 登录成功
+              this.useToken().setToken(data.token);
+              this.useToken().setImToken(data.imToken);
+              this.useToken().setAccid(data.accid);
+              Cookies.set('token', data.token);
+              Cookies.set('accid', data.accid);
+              Cookies.set('imToken', data.imToken);
+            }
+          })
+          .catch(() => {});
       });
     },
   },

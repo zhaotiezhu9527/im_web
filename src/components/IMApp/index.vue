@@ -86,7 +86,7 @@ export default {
   data: function () {
     return {
       useToken,
-      model: 'chat',
+      model: 'contact',
     };
   },
   mounted() {
