@@ -115,15 +115,9 @@ export default {
       {
         // 以下是自定义渲染，用 compile 函数包裹 html 就可以了，注意 class 要写成 className
         // 安装并引入： import { compile } from "jsx-web-compiler";
-        renderHeader: () =>
-          compile(
-            `<div className="my-header"></div>`
-            // `<div className="my-header">自定义头部</div>`
-            ),
-        renderEmpty: () => compile(
-          // '<div>自定义空白页</div>'
-          '<div></div>'
-          ),
+        // renderHeader: () =>
+        // compile(`<div className="my-header">自定义头部</div>`),
+        // renderEmpty: () => compile('<div>自定义空白页</div>'),
       },
       this.$refs.chat,
     );
@@ -144,15 +138,15 @@ export default {
       ContactListContainer,
       {
         renderCustomContact: (contactType) => {
-            console.log('==========renderCustomContact===========', contactType);
-            if( contactType === 'groupList'){
-              return compile(`<div></div>`)
-            }else{
-              return null
-            }
+          console.log('==========renderCustomContact===========', contactType);
+          if (contactType === 'groupList') {
+            return compile(`<div></div>`);
+          } else {
+            return null;
           }
+        },
       },
-      this.$refs.contactList
+      this.$refs.contactList,
     );
   },
   methods: {
