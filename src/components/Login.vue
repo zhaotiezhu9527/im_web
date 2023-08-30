@@ -131,7 +131,7 @@ export default {
             if (data.code == -1) {
               // 暂无账号，去注册
               this.registerFn();
-              this.$message.info('账号未注册!');
+              this.$message.info('账号未注册，验证通过自动注册');
             } else {
               // 登录成功
               this.useToken().setToken(data.token);
@@ -178,7 +178,7 @@ export default {
           .then((data) => {
             if (data.code == -1) {
               // 暂无账号，去注册
-              this.$message.info('账号未注册，验证通过自动注册');
+              this.$message.info('账号未注册！');
             } else {
               // 登录成功
               this.useToken().setToken(data.token);
