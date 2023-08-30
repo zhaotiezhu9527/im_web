@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+require("antd/lib/spin/style/css");
+require("antd/lib/empty/style/css");
+require("antd/lib/button/style/css");
+require("antd/lib/message/style/css");
+require("../../../common/components/ComplexAvatar/style/css");
+require("../../../common/components/CrudeAvatar/style/css");
+require("./msgList.css");
+require("./msgItem.css");

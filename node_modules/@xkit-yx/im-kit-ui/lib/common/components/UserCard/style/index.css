@@ -1,0 +1,110 @@
+/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
+/* stylelint-disable no-duplicate-selectors */
+/* stylelint-disable */
+/* stylelint-disable declaration-bang-space-before,no-duplicate-selectors,string-no-newline */
+html {
+  --ant-primary-color: #1890ff;
+  --ant-primary-color-hover: #40a9ff;
+  --ant-primary-color-active: #096dd9;
+  --ant-primary-color-outline: rgba(24, 144, 255, 0.2);
+  --ant-primary-1: #e6f7ff;
+  --ant-primary-2: #bae7ff;
+  --ant-primary-3: #91d5ff;
+  --ant-primary-4: #69c0ff;
+  --ant-primary-5: #40a9ff;
+  --ant-primary-6: #1890ff;
+  --ant-primary-7: #096dd9;
+  --ant-primary-color-deprecated-pure: ;
+  --ant-primary-color-deprecated-l-35: #cbe6ff;
+  --ant-primary-color-deprecated-l-20: #7ec1ff;
+  --ant-primary-color-deprecated-t-20: #46a6ff;
+  --ant-primary-color-deprecated-t-50: #8cc8ff;
+  --ant-primary-color-deprecated-f-12: rgba(24, 144, 255, 0.12);
+  --ant-primary-color-active-deprecated-f-30: rgba(230, 247, 255, 0.3);
+  --ant-primary-color-active-deprecated-d-02: #dcf4ff;
+  --ant-success-color: #52c41a;
+  --ant-success-color-hover: #73d13d;
+  --ant-success-color-active: #389e0d;
+  --ant-success-color-outline: rgba(82, 196, 26, 0.2);
+  --ant-success-color-deprecated-bg: #f6ffed;
+  --ant-success-color-deprecated-border: #b7eb8f;
+  --ant-error-color: #ff4d4f;
+  --ant-error-color-hover: #ff7875;
+  --ant-error-color-active: #d9363e;
+  --ant-error-color-outline: rgba(255, 77, 79, 0.2);
+  --ant-error-color-deprecated-bg: #fff2f0;
+  --ant-error-color-deprecated-border: #ffccc7;
+  --ant-warning-color: #faad14;
+  --ant-warning-color-hover: #ffc53d;
+  --ant-warning-color-active: #d48806;
+  --ant-warning-color-outline: rgba(250, 173, 20, 0.2);
+  --ant-warning-color-deprecated-bg: #fffbe6;
+  --ant-warning-color-deprecated-border: #ffe58f;
+  --ant-info-color: #1890ff;
+  --ant-info-color-deprecated-bg: #e6f7ff;
+  --ant-info-color-deprecated-border: #91d5ff;
+}
+.common-usercard-modal .ant-modal {
+  width: 352px !important;
+}
+.common-usercard-modal .ant-modal-body {
+  padding: 0;
+}
+.common-usercard-modal .ant-modal-footer {
+  border-top: none;
+  padding: 0 24px 24px;
+}
+.common-usercard-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: url('https://yx-web-nosdn.netease.im/common/7ff58b88ee91e4abe3fc6374296827fb/user-background.png') no-repeat 0 -50px;
+  width: 100%;
+  height: 100px;
+  min-width: 0;
+  padding: 0 30px;
+  position: relative;
+}
+.common-usercard-header-avatar {
+  margin-right: 15px;
+  cursor: pointer;
+}
+.common-usercard-header-nick {
+  font-size: 22px;
+  color: #ffffff;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.common-usercard-header-controls.ant-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #ffffff;
+}
+.common-usercard-content {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+.common-usercard-content-form-item {
+  display: flex;
+  align-items: flex-start;
+}
+.common-usercard-content-form-item:not(:first-child) {
+  margin-top: 16px;
+}
+.common-usercard-content-form-item label {
+  color: #666666;
+  margin-right: 16px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+.common-usercard-content-form-item-text {
+  font-size: 14px;
+  color: #333333;
+  word-break: break-all;
+}
+.common-usercard-footer-button {
+  width: 100%;
+}

@@ -1,0 +1,16 @@
+.contact-msg-wrapper {
+  background-color: #f6f8fa;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+.contact-msg-title {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 1px solid #dbe0e8;
+  padding: 22px 16px;
+}
+.contact-msg-content {
+  padding: 4px 16px;
+}

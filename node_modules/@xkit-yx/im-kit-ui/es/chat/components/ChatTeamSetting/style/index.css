@@ -1,0 +1,144 @@
+/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
+/* stylelint-disable no-duplicate-selectors */
+/* stylelint-disable */
+/* stylelint-disable declaration-bang-space-before,no-duplicate-selectors,string-no-newline */
+html {
+  --ant-primary-color: #1890ff;
+  --ant-primary-color-hover: #40a9ff;
+  --ant-primary-color-active: #096dd9;
+  --ant-primary-color-outline: rgba(24, 144, 255, 0.2);
+  --ant-primary-1: #e6f7ff;
+  --ant-primary-2: #bae7ff;
+  --ant-primary-3: #91d5ff;
+  --ant-primary-4: #69c0ff;
+  --ant-primary-5: #40a9ff;
+  --ant-primary-6: #1890ff;
+  --ant-primary-7: #096dd9;
+  --ant-primary-color-deprecated-pure: ;
+  --ant-primary-color-deprecated-l-35: #cbe6ff;
+  --ant-primary-color-deprecated-l-20: #7ec1ff;
+  --ant-primary-color-deprecated-t-20: #46a6ff;
+  --ant-primary-color-deprecated-t-50: #8cc8ff;
+  --ant-primary-color-deprecated-f-12: rgba(24, 144, 255, 0.12);
+  --ant-primary-color-active-deprecated-f-30: rgba(230, 247, 255, 0.3);
+  --ant-primary-color-active-deprecated-d-02: #dcf4ff;
+  --ant-success-color: #52c41a;
+  --ant-success-color-hover: #73d13d;
+  --ant-success-color-active: #389e0d;
+  --ant-success-color-outline: rgba(82, 196, 26, 0.2);
+  --ant-success-color-deprecated-bg: #f6ffed;
+  --ant-success-color-deprecated-border: #b7eb8f;
+  --ant-error-color: #ff4d4f;
+  --ant-error-color-hover: #ff7875;
+  --ant-error-color-active: #d9363e;
+  --ant-error-color-outline: rgba(255, 77, 79, 0.2);
+  --ant-error-color-deprecated-bg: #fff2f0;
+  --ant-error-color-deprecated-border: #ffccc7;
+  --ant-warning-color: #faad14;
+  --ant-warning-color-hover: #ffc53d;
+  --ant-warning-color-active: #d48806;
+  --ant-warning-color-outline: rgba(250, 173, 20, 0.2);
+  --ant-warning-color-deprecated-bg: #fffbe6;
+  --ant-warning-color-deprecated-border: #ffe58f;
+  --ant-info-color: #1890ff;
+  --ant-info-color-deprecated-bg: #e6f7ff;
+  --ant-info-color-deprecated-border: #91d5ff;
+}
+.chat-group-setting-wrap {
+  position: relative;
+  height: 100%;
+  overflow-y: auto;
+}
+.chat-group-setting-wrap .chat-group-setting-item {
+  padding: 16px 16px;
+  border-bottom: 1px solid #e4e9f2;
+}
+.chat-group-setting-wrap .chat-group-setting-members-list {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.chat-group-setting-wrap .chat-group-setting-members-list .ant-badge {
+  margin-left: 12px;
+}
+.chat-group-setting-wrap .chat-group-setting-add-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px dashed #c1c8d1;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.chat-group-setting-wrap .chat-group-setting-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.chat-group-setting-wrap .chat-group-setting-head-info {
+  width: calc(100% - 14px);
+  display: flex;
+  align-items: center;
+}
+.chat-group-setting-wrap .chat-group-setting-head .chat-group-setting-label {
+  padding-left: 12px;
+  font-weight: 400;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.chat-group-setting-wrap .chat-group-setting-members .chat-group-setting-members-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+.chat-group-setting-wrap .chat-group-setting-members .chat-group-setting-members-num {
+  padding-left: 6px;
+  color: #666666;
+}
+.chat-group-setting-wrap .chat-group-setting-power {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.chat-group-setting-wrap .chat-group-setting-group-operation {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.chat-group-setting-wrap .chat-group-setting-group-operation .chat-group-setting-group-operation-item {
+  flex: 1;
+  display: inline-block;
+  margin: 0 30px;
+  border-radius: 4px;
+}
+.chat-group-setting-wrap .chat-group-setting-group-operation .chat-group-setting-group-operation-dismiss {
+  color: #f7f7f7;
+  background: #ff4d4f;
+}
+.chat-group-setting-wrap .chat-group-setting-exit-btn {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #f7f7f7;
+  background: #ff4d4f;
+  border-radius: 4px;
+}
+.chat-group-setting-wrap .chat-group-setting-nickinteam {
+  margin-top: 16px;
+  background-color: #f1f5f8;
+  border-color: #f1f5f8;
+}
+.chat-group-setting-wrap .chat-group-setting-nickinteam .ant-input {
+  background-color: #f1f5f8;
+}

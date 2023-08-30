@@ -1,0 +1,7 @@
+.common-complex-avatar-wrapper {
+  width: fit-content;
+  cursor: pointer;
+}
+.common-complex-avatar-wrapper-nocursor {
+  cursor: default;
+}
