@@ -140,6 +140,7 @@ export default {
               Cookies.set('token', data.token);
               Cookies.set('accid', data.accid);
               Cookies.set('imToken', data.imToken);
+              window.location.reload();
             }
           })
           .catch(() => {});
@@ -170,6 +171,7 @@ export default {
         Cookies.set('token', data.token);
         Cookies.set('accid', data.accid);
         Cookies.set('imToken', data.imToken);
+        window.location.reload();
       });
     },
     userLogin() {
@@ -187,6 +189,7 @@ export default {
               Cookies.set('token', data.token);
               Cookies.set('accid', data.accid);
               Cookies.set('imToken', data.imToken);
+              window.location.reload();
             }
           })
           .catch(() => {});
