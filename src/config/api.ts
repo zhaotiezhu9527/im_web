@@ -6,7 +6,7 @@ import request from './request';
  */
 async function get_login(params: any) {
   return request({
-    url: 'im-qtapi-test/user/login',
+    url: 'user/login',
     method: 'post',
     data: params,
   });
@@ -18,7 +18,7 @@ async function get_login(params: any) {
  */
 async function get_register(params: any) {
   return request({
-    url: 'im-qtapi-test/user/register',
+    url: 'user/register',
     method: 'post',
     data: params,
   });
@@ -30,7 +30,7 @@ async function get_register(params: any) {
  */
 async function get_logout(params: any) {
   return request({
-    url: 'im-qtapi-test/user/logout',
+    url: 'user/logout',
     method: 'post',
     data: params,
   });
@@ -42,7 +42,7 @@ async function get_logout(params: any) {
  */
 async function get_config(params: any) {
   return request({
-    url: 'im-qtapi-test/system/config',
+    url: 'system/config',
     method: 'get',
     params: params,
   });

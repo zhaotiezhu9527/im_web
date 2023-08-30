@@ -4,7 +4,7 @@ import { message } from 'ant-design-vue';
 // 创建并配置一个新的axios
 // process.env.VUE_APP_BASE_API
 const service = axios.create({
-  baseURL: 'http://im.juhai.xyz/',
+  baseURL: 'http://im.juhai.xyz/im-qtapi-test/',
   timeout: 60000, // 请求超时时间 毫秒
   // withCredentials: true,   // 异步请求时是否携带cookie
   headers: {
