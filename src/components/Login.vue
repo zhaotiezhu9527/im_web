@@ -1,7 +1,6 @@
 <template>
   <div class="login-wrapper">
-    <div class="title">验证码登录</div>
-    <p class="sub_title">未注册的账号验证通过后将自动注册</p>
+    <div class="title">登录</div>
     <a-form ref="formRef" :rules="rules" layout="vertical" :model="form">
       <a-form-item label="账号：" name="userName">
         <a-input
