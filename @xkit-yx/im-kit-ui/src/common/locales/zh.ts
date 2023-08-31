@@ -157,6 +157,7 @@ const LocaleConfig = {
   teamTitle: '群名称',
   teamAvatarText: '群头像',
   addTeamMemberText: '添加成员',
+  // searchEmptyText: '您暂未添加好友和群组',
   searchEmptyText: '您暂未添加好友和群组',
   searchNoResText: '暂无搜索结果',
   searchFriendTitle: '好友',
