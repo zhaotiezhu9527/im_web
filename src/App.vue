@@ -34,7 +34,8 @@ export default {
     //   console.log(data);
     // });
     const initOptions = {
-      appkey: 'cc64ebc7c56f3fd8afe35e0d748aee0e', // 请填写你的appkey
+      // appkey: 'cc64ebc7c56f3fd8afe35e0d748aee0e', // 请填写你的appkey   测试
+      appkey: '9dbf3424f278453ac7850161f5106737', // 请填写你的appkey   正式
       account: this.useToken().accid, // 请填写你的account
       token: this.useToken().imToken, // 请填写你的token
     };
